@@ -1,3 +1,5 @@
+# IMPORTANT
+The site is currently broken becuz my site blew up and my vercel hobbyist account got paused. Pls wait a few months or weeks cuz i have to focus on school as my numba 1 priority.
 # Zenithub (formerly BlackoutGames)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description
