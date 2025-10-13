@@ -50,23 +50,16 @@
 </style>
 </head>
 <body>
-    <embed id="gameEmbed" class="game-embed" src="https://litchis-ui.github.io/Granny2/"></embed>
-    <div class="taskbar">
-            <button onclick="window.location.href='../select.html'">Back</button>
-            <button onclick="window.location.reload()">Restart</button>
-        </div>
+  <embed id="gameEmbed" class="game-embed" src='gran2.html'></embed>
+  <div class="taskbar">
+      <button onclick="window.location.href='../select.html'">Back</button>
+      <button onclick="window.location.reload()">Restart</button>
+    </div>
     <style>
         body {
             background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
         }
     </style>
-    <script>
-        // Prevent the page from redirecting entirely
-        window.addEventListener('beforeunload', (event) => {
-            event.preventDefault();
-            event.returnValue = '';
-        });
-    </script>
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const favicon = document.querySelector("link[rel='icon']") || document.createElement("link");
