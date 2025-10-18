@@ -5,19 +5,16 @@
 Zenithub is the ultimate unblocked games website for anyone who wants to evade restrictions at school. It includes a rapidly increasing number of games, useful tools, a game-changing search engine/proxy and frequent high-quality updates that bring much needed things. If you want anything to be added, put it in the game request form!
 
 If you fork this repository, please give it a star and ensure there is a page on your website giving credit to the creator.
-
-## I miss BlackoutGames...
-You thought I completely wiped BlackoutGames? I bundled the code to BlackoutGames before the Zenithub upd as a Release right here on github! Go to releases and unzip it to re-live good times.
+Also the code to the old site BlackoutGames is in the releases if you wanna use that.
 ## Website
 
 Visit the live website: [Zenithub](https://blackoutgames.netlify.app)
 
 ## Features
-- For funnies, index.html has a small chance to show a dr.house meme
 - A wide variety of unblocked games and apps.
 - Integrated proxy to navigate the internet freely
 - Hosted on Netlify, Vercel, and Cloudflare Pages.
-- If you have to use Zenithub, but cant use it without getting blocked, go [here](https://zenithub.pages.dev/launch) or https://(any zenithub official link found in links.html here)/launch
+- If you want to use Zenithub, but cant use it without getting blocked, go [here](https://zenithub.pages.dev/launch) or https://(any zenithub official link found in links.html [here](https://zenithub.pages.dev/links.html))/launch
 ## Star History
 
 <a href="https://www.star-history.com/#dotlyhiyou/blackoutgames&Date">
@@ -42,4 +39,3 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 - Thanks to everyone that supported Zenithub from the beginning.
 - Special thanks to Netlify, Vercel, and Cloudflare for their hosting services.
 - Credits to the owners of the games featured.
-- Credits to the Creators of UV Static 2.0 for the search. They are a master of their work.
