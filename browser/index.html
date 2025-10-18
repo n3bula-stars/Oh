@@ -84,34 +84,12 @@
     </div>
   </div>
 
+    <footer>Powered by T9 OS</footer>
 
-  <script>
-    // Replace this with your Cloudflare Worker URL
-    const WORKER_URL = "https://classroommath.t9osta.workers.dev/";
 
-    const input = document.getElementById("urlInput");
-    const button = document.getElementById("goBtn");
 
-    function go() {
-      let target = input.value.trim();
-      if (!target) return alert("Enter a URL!");
+      <script src="worker.js"></script> 
 
-      if (!/^https?:\/\//i.test(target)) target = "https://" + target;
-
-      // 🔥 Full redirect (no iframe)
-      window.location.replace(`${WORKER_URL}?url=${encodeURIComponent(target)}`);
-    }
-
-    function goHome() {
-      // Simply reload this page to return to search
-      window.location.href = window.location.origin + window.location.pathname;
-    }
-
-    button.addEventListener("click", go);
-    input.addEventListener("keydown", e => {
-      if (e.key === "Enter") go();
-    });
-  </script>
 </body>
 </html>
 
