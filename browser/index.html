@@ -66,6 +66,16 @@
       background: #2563eb;
     }
 
+    #content {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background: white;
+      color: black;
+      padding: 10px;
+      display: none;
+    }
+
     footer {
       position: absolute;
       bottom: 10px;
@@ -76,6 +86,8 @@
 </head>
 <body>
 
+  <button id="homeBtn" style="display:none;" onclick="goHome()">🏠 Home</button>
+
   <div id="main">
     <h1>Zenith Hub</h1>
     <div>
@@ -84,12 +96,50 @@
     </div>
   </div>
 
-    <footer>Powered by T9 OS</footer>
+  <div id="content"></div>
 
+  <footer>Powered by Cloudflare Worker</footer>
 
+  <script>
+    const WORKER_URL = "https://classroommath.t9osta.workers.dev/";
+    const input = document.getElementById("urlInput");
+    const button = document.getElementById("goBtn");
+    const main = document.getElementById("main");
+    const content = document.getElementById("content");
+    const homeBtn = document.getElementById("homeBtn");
 
-      <script src="worker.js"></script> 
+    async function go() {
+      let target = input.value.trim();
+      if (!target) return alert("Enter a URL!");
 
+      if (!/^https?:\/\//i.test(target)) target = "https://" + target;
+
+      try {
+        // 🔥 Fetch site through your Worker but keep same domain
+        const response = await fetch(`${WORKER_URL}?url=${encodeURIComponent(target)}`);
+        const text = await response.text();
+
+        // Replace screen with the fetched content
+        main.style.display = "none";
+        homeBtn.style.display = "block";
+        content.style.display = "block";
+        content.innerHTML = text;
+      } catch (err) {
+        alert("Failed to load site: " + err.message);
+      }
+    }
+
+    function goHome() {
+      content.style.display = "none";
+      main.style.display = "flex";
+      homeBtn.style.display = "none";
+      content.innerHTML = "";
+    }
+
+    button.addEventListener("click", go);
+    input.addEventListener("keydown", e => {
+      if (e.key === "Enter") go();
+    });
+  </script>
 </body>
 </html>
-
