@@ -38,4 +38,4 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 - Thanks to everyone that supported Zenithub from the beginning.
 - Special thanks to Netlify, Vercel, and Cloudflare for their hosting services.
-- Credits to the owners of the games featured.
+- Credits to the owners of the games and tools featured.
