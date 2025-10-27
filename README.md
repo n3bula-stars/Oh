@@ -13,7 +13,7 @@ Visit the live website: [Zenithub](https://blackoutgames.netlify.app)
 ## Features
 - A wide variety of unblocked games and apps.
 - Integrated proxy to navigate the internet freely
-- Hosted on Netlify, Vercel, and Cloudflare Pages.
+- Hosted on Netlify, Vercel, and Cloudflare Pages, but can be used in other places!
 - If you want to use Zenithub, but cant use it without getting blocked, go [here](https://zenithub.pages.dev/launch) or https://(any zenithub official link found in links.html [here](https://zenithub.pages.dev/links.html))/launch
 ## Star History
 
@@ -33,7 +33,6 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 - [GitHub Profile](https://github.com/DotLYHiyou)
 - [Discord](https://discord.gg/rcCnzaPu)
-
 ## Acknowledgements
 
 - Thanks to everyone that supported Zenithub from the beginning.
